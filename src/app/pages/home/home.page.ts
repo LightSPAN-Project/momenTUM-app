@@ -168,7 +168,8 @@ export class HomePage implements OnInit {
       await this.loadingService.dismiss();
       const invalidHTTPError = error !== 'InvalidStudyError';
       const invalidJSONError = !invalidHTTPError;
-      this.displayEnrolError(invalidJSONError, invalidHTTPError);
+      console.log(error)
+      this.displayEnrolError(error, invalidJSONError, invalidHTTPError);
       console.log(error);
       return;
     }
@@ -246,7 +247,7 @@ export class HomePage implements OnInit {
    *
    * @param isQRCode Denotes whether the error was caused via QR code enrolment
    */
-  async displayEnrolError(isJSONinvalid: boolean, isURLproblem: boolean) {
+  async displayEnrolError(error: any, isJSONinvalid: boolean, isURLproblem: boolean) {
     let message = "We couldn't load your study.";
 
     if (isJSONinvalid && !isURLproblem) {
@@ -254,7 +255,7 @@ export class HomePage implements OnInit {
         "We couldn't load your study. The downloaded study has an invalid format.";
     } else if (!isJSONinvalid && isURLproblem) {
       message =
-        "We couldn't load your study. The URL is invalid. Please ensure you are entering the correct URL.";
+        error + " " + isJSONinvalid + " " + isURLproblem + " We couldn't load your study. The URL is invalid. Please ensure you are entering the correct URLs.";
     }
 
     const alert = await this.alertController.create({

@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Http } from '@capacitor-community/http';
+import { CapacitorHttp } from '@capacitor/core';
 import { HttpClient } from '@angular/common/http';
 import { StorageService } from '../storage/storage.service';
 import { Log, Response, Task } from 'src/app/interfaces/types';
@@ -34,7 +34,7 @@ export class DataService {
     };
 
     // HTTP GET request
-    const result = await Http.get(options);
+    const result = await CapacitorHttp.get(options);
     const object = result.data;
     if (this.validateStudy(object)) return object;
     else throw Error('InvalidStudyError');

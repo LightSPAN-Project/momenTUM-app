@@ -35,6 +35,7 @@ def capacitor_pods
   pod 'CapacitorPreferences', :path => '../../node_modules/@capacitor/preferences'
   pod 'CapacitorSplashScreen', :path => '../../node_modules/@capacitor/splash-screen'
   pod 'CapacitorStatusBar', :path => '../../node_modules/@capacitor/status-bar'
+  pod 'JcesarmobileSslSkip', :path => '../../node_modules/@jcesarmobile/ssl-skip'
   pod 'CapacitorEmailComposer', :path => '../../node_modules/capacitor-email-composer'
   pod 'CapacitorPluginFiledownload', :path => '../../node_modules/capacitor-plugin-filedownload'
 end

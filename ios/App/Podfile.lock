@@ -34,6 +34,8 @@ PODS:
     - Capacitor
   - CapacitorStatusBar (5.0.6):
     - Capacitor
+  - JcesarmobileSslSkip (0.3.0):
+    - Capacitor
 
 DEPENDENCIES:
   - "Capacitor (from `../../node_modules/@capacitor/ios`)"
@@ -53,6 +55,7 @@ DEPENDENCIES:
   - "CapacitorPreferences (from `../../node_modules/@capacitor/preferences`)"
   - "CapacitorSplashScreen (from `../../node_modules/@capacitor/splash-screen`)"
   - "CapacitorStatusBar (from `../../node_modules/@capacitor/status-bar`)"
+  - "JcesarmobileSslSkip (from `../../node_modules/@jcesarmobile/ssl-skip`)"
 
 SPEC REPOS:
   trunk:
@@ -93,6 +96,8 @@ EXTERNAL SOURCES:
     :path: "../../node_modules/@capacitor/splash-screen"
   CapacitorStatusBar:
     :path: "../../node_modules/@capacitor/status-bar"
+  JcesarmobileSslSkip:
+    :path: "../../node_modules/@jcesarmobile/ssl-skip"
 
 SPEC CHECKSUMS:
   Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
@@ -113,7 +118,8 @@ SPEC CHECKSUMS:
   CapacitorPreferences: f03954bcb0ff09c792909e46bff88e3183c16b10
   CapacitorSplashScreen: 5fa2ab5e46cf5cc530cf16a51c80c7a986579ccd
   CapacitorStatusBar: 565c0a1ebd79bb40d797606a8992b4a105885309
+  JcesarmobileSslSkip: b6f678df52e9bb7ba203fa920e8296eeefba486c
 
-PODFILE CHECKSUM: 7bd118f66729aa5a2240435e167071af32c284c1
+PODFILE CHECKSUM: f43a90a3933be8def2670b06b32d7acc69e1f6e9
 
 COCOAPODS: 1.14.3
